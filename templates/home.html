@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron text-center">
+
+  <div class="container">
+
+    <h1>Attendance📝 Management System using Face👦🏻 Recognition</h1>
+    <p style="color:#888;">Based on Python and OpenCV</p>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>Here We go !</h2>
+    </div>
+  </div>
+  <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/train_model" class="btn btn-sm animated-button victoria-one">Register Students📝</a> </div>
+    <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/detection" class="btn btn-sm animated-button victoria-one">Face Detection</a> </div>
+    <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/exec" class="btn btn-sm animated-button victoria-two">Fill Attendance using 👦🏻</a> </div>
+        <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/exec" class="btn btn-sm animated-button victoria-two">Check Available Students📝</a>
+            <br></br></div>
+
+    {% endblock %}

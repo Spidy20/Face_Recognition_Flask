@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron text-center">
+
+  <div class="container">
+
+    <h1>Face Detection System</h1>
+    <p style="color:#888;">Detecting Faces.....</p>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+    </div>
+  </div>
+  <div class="row">
+	  <img src="{{ url_for('video_feed') }}" align="middle" />
+
+{% endblock %}

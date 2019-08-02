@@ -1,0 +1,66 @@
+
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron text-center">
+    <style>
+
+
+    input[type=text] {
+  width: 100%;
+    color: black;
+  padding: 10px 17px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  font-family: 'times', cursive;
+  font-size:28px;
+  background-color: #FE2E2E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+   opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer
+  button:hover {opacity: 3}
+}
+button:hover {opacity: 1}
+    </style>
+
+
+
+  <div class="container">
+
+    <h1>Enter Student👦🏻 Details</h1>
+
+  </div>
+</div>
+
+
+
+<body>
+ <div class="login">
+
+    <form action = "/get_image" method="post">
+    <div class="container">
+      <label ><b>Enrollment Number</b></label>
+      <input type="text" name="en" placeholder="Enter Enrollment" maxlength="6"  required>
+
+      <label ><b>Student Name</b></label>
+      <input type="text"  name="st" placeholder="Enter student name" required>
+        <br></br>
+      <button type="submit">Register</button>
+    </form>
+
+</div>
+  <div class="row">
+
+
+{% endblock %}

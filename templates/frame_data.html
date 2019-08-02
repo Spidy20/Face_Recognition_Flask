@@ -1,0 +1,26 @@
+
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron text-center">
+
+  <div class="container">
+
+    <h1>Face👦🏻 Image Generator System</h1>
+    <p style="color:#888;">Creating Face data of (Name = {{ nm }} , Enrollment = {{enr}}).............</p>
+    <p style="color:#888;">We will take arround 100 images</p>
+    <p style="color:#888;">NOTE : Please take Images in lighty environment for better accuracy</p>
+    <p style="color:#888;">Click on 'Train model' after camera stop & after adding all students faces</p>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+    </div>
+  </div>
+  <div class="row">
+	  <img src="{{ url_for('video_feed') }}" align="middle" />
+            <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/training" class="btn btn-sm animated-button victoria-two">Train Model💻</a>
+
+            <div class="col-md-6 col-sm-6 col-xs-6"> <a href="/train_model" class="btn btn-sm animated-button victoria-two">Add Students👦🏻</a>
+{% endblock %}
